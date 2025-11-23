@@ -1,0 +1,18 @@
+.app-main {
+  padding: 32px;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.page-subtitle {
+  font-size: 15px;
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+/* Feature card styles moved to css/components/feature-card.css */
+
+

@@ -1,0 +1,22 @@
+# Generated JavaScript files (compiled from TypeScript)
+js/
+*.js.map
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahrzeug Details - Fahrly</title>
+
+  <link rel="stylesheet" href="../../../css/base.css" />
+  <link rel="stylesheet" href="../../../css/layout.css" />
+  <link rel="stylesheet" href="../../../css/components/navbar.css" />
+  <link rel="stylesheet" href="../../../css/components/buttons.css" />
+  <link rel="stylesheet" href="../../../css/components/pills.css" />
+  <link rel="stylesheet" href="../../../css/components/modal.css" />
+  <link rel="stylesheet" href="../../../css/pages/vehicle-detail.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="app-navbar"></div>
+
+  <!-- Page Content -->
+  <main class="app-main">
+    <div class="detail-header">
+      <div>
+        <button class="btn btn-secondary btn-sm" id="btn-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"></path>
+          </svg>
+          Zurück
+        </button>
+        <h1 class="page-title" id="vehicle-title">Fahrzeug Details</h1>
+      </div>
+    </div>
+
+    <!-- Overview Card -->
+    <div class="overview-card" id="overview-card">
+      <!-- Populated by JavaScript -->
+    </div>
+
+    <!-- Telematics Integration Block -->
+    <div class="telematics-block" id="telematics-block">
+      <!-- Populated by JavaScript -->
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs-container">
+      <div class="tabs-header" id="tabs-header">
+        <button class="tab-btn active" data-tab="overview">Übersicht</button>
+        <button class="tab-btn" data-tab="telematics" id="tab-telematics" style="display: none;">Telematik</button>
+        <button class="tab-btn" data-tab="documents">Dokumente</button>
+        <button class="tab-btn" data-tab="maintenance">Wartung</button>
+        <button class="tab-btn" data-tab="damages">Schäden</button>
+        <button class="tab-btn" data-tab="costs">Kosten</button>
+      </div>
+
+      <div class="tabs-content">
+        <div class="tab-pane active" id="tab-pane-overview">
+          <!-- Populated by JavaScript -->
+        </div>
+        <div class="tab-pane" id="tab-pane-telematics">
+          <!-- Populated by JavaScript -->
+        </div>
+        <div class="tab-pane" id="tab-pane-documents">
+          <!-- Populated by JavaScript -->
+        </div>
+        <div class="tab-pane" id="tab-pane-maintenance">
+          <!-- Populated by JavaScript -->
+        </div>
+        <div class="tab-pane" id="tab-pane-damages">
+          <!-- Populated by JavaScript -->
+        </div>
+        <div class="tab-pane" id="tab-pane-costs">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../../js/main.js"></script>
+  <script type="module" src="../../../js/pages/vehicles/vehicle-detail.js"></script>
+</body>
+</html>
+

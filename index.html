@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahrly Dashboard</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components/navbar.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="app-navbar"></div>
+
+  <!-- Page Content -->
+  <main class="app-main">
+    <h1 class="page-title">Dashboard</h1>
+    <p class="page-subtitle">Welcome to Fahrly.</p>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Debug: Check if script loaded
+    console.log('Page loaded');
+    setTimeout(() => {
+      const navbar = document.getElementById('app-navbar');
+      if (navbar && navbar.innerHTML.trim() === '') {
+        console.error('Navbar is still empty - JavaScript may not have executed');
+      } else {
+        console.log('Navbar loaded successfully');
+      }
+    }, 100);
+  </script>
+</body>
+</html>
+
+

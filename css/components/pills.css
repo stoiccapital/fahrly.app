@@ -1,0 +1,80 @@
+/* Status Pills and Badges */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.pill-status-available {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.pill-status-in_use {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.pill-status-reserved {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.pill-status-maintenance {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.pill-status-out_of_service {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.pill-status-driving {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.pill-status-idle {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.pill-status-offline {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.badge-connected {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.badge-warning {
+  background: #f59e0b;
+  color: #ffffff;
+}
+
+.badge-danger {
+  background: #ef4444;
+  color: #ffffff;
+}
+

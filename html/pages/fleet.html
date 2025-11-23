@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet - Fahrly</title>
+
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+  <link rel="stylesheet" href="../../css/components/navbar.css" />
+  <link rel="stylesheet" href="../../css/components/feature-card.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="app-navbar"></div>
+
+  <!-- Page Content -->
+  <main class="app-main">
+    <h1 class="page-title">Fleet</h1>
+    <p class="page-subtitle">Verwalten Sie Ihre Fahrzeugflotte.</p>
+
+    <div class="feature-cards">
+      <div class="feature-card" id="fahrzeuge">
+        <div class="feature-card-icon">
+          <svg width="24" height="24" viewBox="-4 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.938 7.188l3.563 7.156c0.063 0.094 0.094 0.219 0.125 0.313 0.219 0.563 0.375 1.344 0.375 1.844v3.406c0 1.063-0.719 1.938-1.719 2.188v2c0 0.969-0.781 1.719-1.719 1.719-0.969 0-1.719-0.75-1.719-1.719v-1.938h-13.688v1.938c0 0.969-0.75 1.719-1.719 1.719-0.938 0-1.719-0.75-1.719-1.719v-2c-1-0.25-1.719-1.125-1.719-2.188v-3.406c0-0.5 0.156-1.281 0.375-1.844 0.031-0.094 0.063-0.219 0.125-0.313l3.563-7.156c0.281-0.531 1.031-1.031 1.656-1.031h12.563c0.625 0 1.375 0.5 1.656 1.031zM5.531 9.344l-1.906 4.344c-0.094 0.156-0.094 0.344-0.094 0.469h16.938c0-0.125 0-0.313-0.094-0.469l-1.906-4.344c-0.25-0.563-1-1.063-1.594-1.063h-9.75c-0.594 0-1.344 0.5-1.594 1.063zM4.688 19.906c1 0 1.781-0.813 1.781-1.844 0-1-0.781-1.781-1.781-1.781s-1.844 0.781-1.844 1.781c0 1.031 0.844 1.844 1.844 1.844zM19.313 19.906c1 0 1.844-0.813 1.844-1.844 0-1-0.844-1.781-1.844-1.781s-1.781 0.781-1.781 1.781c0 1.031 0.781 1.844 1.781 1.844z"></path>
+          </svg>
+        </div>
+        <h2 class="feature-card-title">Fahrzeuge</h2>
+        <p class="feature-card-description">Verwalten Sie Ihre Fahrzeugflotte</p>
+      </div>
+
+      <div class="feature-card" id="wartung">
+        <div class="feature-card-icon">
+          <svg width="24" height="24" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <title>maintenance</title>
+            <g fill="currentColor" transform="translate(42.666667, 42.666667)">
+              <path d="M128,7.10542736e-15 C198.692448,7.10542736e-15 256,57.307552 256,128 C256,140.931179 254.082471,153.414494 250.516246,165.181113 L384,298.666667 C407.564149,322.230816 407.564149,360.435851 384,384 C360.435851,407.564149 322.230816,407.564149 298.666667,384 L165.181113,250.516246 C153.414494,254.082471 140.931179,256 128,256 C57.307552,256 7.10542736e-15,198.692448 7.10542736e-15,128 C7.10542736e-15,114.357909 2.13416363,101.214278 6.08683609,88.884763 L66.6347809,149.333333 L126.649,129.346 L129.329,126.666 L149.333333,66.7080586 L88.7145729,6.14152881 C101.0933,2.15385405 114.29512,7.10542736e-15 128,7.10542736e-15 Z"/>
+            </g>
+          </svg>
+        </div>
+        <h2 class="feature-card-title">Wartung</h2>
+        <p class="feature-card-description">Planen und verwalten Sie Wartungsarbeiten</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../js/main.js"></script>
+  <script>
+    document.getElementById('fahrzeuge')?.addEventListener('click', () => {
+      window.location.href = 'fleet/vehicles.html';
+    });
+  </script>
+</body>
+</html>
+

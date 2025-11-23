@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahrzeuge - Fahrly</title>
+
+  <link rel="stylesheet" href="../../../css/base.css" />
+  <link rel="stylesheet" href="../../../css/layout.css" />
+  <link rel="stylesheet" href="../../../css/components/navbar.css" />
+  <link rel="stylesheet" href="../../../css/components/buttons.css" />
+  <link rel="stylesheet" href="../../../css/components/pills.css" />
+  <link rel="stylesheet" href="../../../css/components/modal.css" />
+  <link rel="stylesheet" href="../../../css/pages/vehicles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="app-navbar"></div>
+
+  <!-- Page Content -->
+  <main class="app-main">
+    <div class="vehicles-header">
+      <div>
+        <h1 class="page-title">Fahrzeuge</h1>
+        <p class="page-subtitle">Verwalten Sie Ihre Fahrzeugflotte</p>
+      </div>
+      <button type="button" class="btn btn-primary" id="btn-add-vehicle">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        Neues Fahrzeug
+      </button>
+    </div>
+
+    <div class="vehicles-controls">
+      <div class="search-container">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Nach Name oder Kennzeichen suchen..."
+        />
+      </div>
+
+      <div class="status-filters" id="status-filters">
+        <button class="filter-pill active" data-status="all">Alle</button>
+        <button class="filter-pill" data-status="available">Verfügbar</button>
+        <button class="filter-pill" data-status="in_use">In Nutzung</button>
+        <button class="filter-pill" data-status="reserved">Reserviert</button>
+        <button class="filter-pill" data-status="maintenance">Wartung</button>
+        <button class="filter-pill" data-status="out_of_service">Außer Betrieb</button>
+      </div>
+    </div>
+
+    <div class="vehicles-table-container">
+      <table class="vehicles-table" id="vehicles-table">
+        <thead>
+          <tr>
+            <th>Fahrzeug</th>
+            <th>Kategorie</th>
+            <th>Fahrer</th>
+            <th>Status</th>
+            <th>KM</th>
+            <th>Compliance</th>
+            <th>Aktionen</th>
+          </tr>
+        </thead>
+        <tbody id="vehicles-tbody">
+          <!-- Populated by JavaScript -->
+        </tbody>
+      </table>
+
+      <div class="vehicles-cards" id="vehicles-cards">
+        <!-- Mobile view - populated by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <script src="../../../js/main.js"></script>
+  <script type="module" src="../../../js/pages/vehicles/vehicles.js"></script>
+</body>
+</html>
+

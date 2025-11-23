@@ -1,0 +1,250 @@
+/* Vehicles List Page */
+
+.vehicles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+.vehicles-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.search-container {
+  position: relative;
+  max-width: 400px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 12px 10px 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.status-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  padding: 6px 16px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: Inter, sans-serif;
+}
+
+.filter-pill:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.filter-pill.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.vehicles-table-container {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vehicles-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vehicles-table thead {
+  background: #f9fafb;
+}
+
+.vehicles-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.vehicles-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #111827;
+}
+
+.vehicles-table tbody tr {
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.vehicles-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.vehicles-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.vehicle-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vehicle-name {
+  font-weight: 600;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vehicle-plate {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.compliance-icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.compliance-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.compliance-icon.warning {
+  color: #f59e0b;
+}
+
+.compliance-icon.danger {
+  color: #ef4444;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+}
+
+/* Mobile Cards View */
+.vehicles-cards {
+  display: none;
+}
+
+.vehicle-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vehicle-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.vehicle-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vehicle-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.vehicle-card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.vehicle-card-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vehicle-card-label {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.vehicle-card-value {
+  color: #111827;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .vehicles-header {
+    flex-direction: column;
+  }
+
+  .vehicles-table {
+    display: none;
+  }
+
+  .vehicles-cards {
+    display: block;
+  }
+
+  .search-container {
+    max-width: 100%;
+  }
+}
+
